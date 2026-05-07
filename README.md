@@ -11,6 +11,15 @@ This project is intentionally compact. It demonstrates the engineering pieces mo
 - Optional Ollama provider for local/offline LLM experiments
 - Simple eval runner for checking agent behavior before shipping
 
+## Status
+
+This is a demo/MVP project for local experimentation and portfolio learning. It is not production-ready.
+
+- The default demo uses a deterministic fake model, so it works without API keys.
+- Ollama support is optional and runs against a local Ollama server on your machine.
+- Coding-agent workflows are currently plan-only. They can inspect, run guarded commands, and produce reports, but they do not edit files.
+- Do not use this for production automation without adding stronger sandboxing, approvals, persistent logs, and security review.
+
 ![Terminal demo](docs/assets/terminal-demo.svg)
 
 ## Quick Start
