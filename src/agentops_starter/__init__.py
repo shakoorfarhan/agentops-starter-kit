@@ -2,7 +2,13 @@
 
 from agentops_starter.agent import Agent, AgentConfig, AgentResult, RetryPolicy
 from agentops_starter.evals import EvalCase, EvalResult, run_eval
-from agentops_starter.models import FakeModelProvider, ModelProvider, ModelRequest, ModelResponse
+from agentops_starter.models import (
+    FakeModelProvider,
+    ModelProvider,
+    ModelRequest,
+    ModelResponse,
+    OllamaModelProvider,
+)
 from agentops_starter.telemetry import TraceEvent, TraceRecorder
 from agentops_starter.tools import (
     Tool,
@@ -23,6 +29,7 @@ __all__ = [
     "ModelProvider",
     "ModelRequest",
     "ModelResponse",
+    "OllamaModelProvider",
     "RetryPolicy",
     "Tool",
     "ToolCall",

@@ -17,6 +17,7 @@ dev = [
 
 [project.scripts]
 agentops-demo = "agentops_starter.cli:main"
+agentops = "agentops_starter.cli:main"
 
 [build-system]
 requires = ["hatchling"]
