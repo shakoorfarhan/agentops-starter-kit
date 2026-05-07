@@ -162,9 +162,12 @@ class OllamaModelProvider:
             )
 
         tool_name = parsed.get("tool_name")
+        tool_input = parsed.get("tool_input")
+        if not isinstance(tool_input, dict):
+            tool_input = {}
         return ModelResponse(
             thought=str(parsed.get("thought") or "Local model response."),
             final_answer=parsed.get("final_answer"),
             tool_name=str(tool_name) if tool_name else None,
-            tool_input=dict(parsed.get("tool_input") or {}),
+            tool_input={str(key): str(value) for key, value in tool_input.items()},
         )

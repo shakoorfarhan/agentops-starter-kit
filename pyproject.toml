@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A production-minded starter kit for observable, testable AI agents."
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{ name = "Your Name" }]
+authors = [{ name = "AgentOps Starter Kit contributors" }]
 license = { text = "MIT" }
 dependencies = []
 
