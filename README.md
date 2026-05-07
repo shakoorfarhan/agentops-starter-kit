@@ -252,12 +252,3 @@ uv run pytest
 uv run ruff check .
 uv run ruff format --check .
 ```
-
-## Portfolio Notes
-
-This project is designed to be useful in job conversations. Be ready to explain:
-
-- how the agent loop decides when to stop
-- how tool failures are represented
-- why deterministic model doubles matter
-- where you would add streaming, persistence, auth, or a web dashboard
